@@ -1,0 +1,476 @@
+/* ------------------------------------
+   RESET BÁSICO
+------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container padrão para centralizar o conteúdo */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* ------------------------------------
+     HEADER / NAVBAR
+  ------------------------------------ */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #007BFF;
+  }
+  
+  /* Botão de menu mobile (hambúrguer) */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+  }
+  
+  /* ------------------------------------
+     HERO / BANNER
+  ------------------------------------ */
+  .hero {
+    background: url('images/pexels-gustavo-fring-4173334\ 1.png') no-repeat center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-content button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-content button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ------------------------------------
+     SEÇÃO DE DESTAQUES (CARROSSEL)
+  ------------------------------------ */
+  .features .carousel-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    position: relative;
+    margin: 2rem 0;
+  }
+  
+  .features .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  .carousel-track{
+    padding: 0 20px;
+    max-width: 90%;
+  }
+  
+  
+  .features .carousel-track .feature-card {
+    min-width: calc(100% / 3); 
+    box-sizing: border-box;
+    padding: 0.5rem; 
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    text-align: center;
+  }
+  
+  .features .carousel-track .feature-card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .features .carousel-track .feature-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .features .carousel-track .feature-card p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .features .carousel-track .feature-card .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .feature-card{
+    margin: 0 10px;
+  }
+
+  .features .carousel-track .feature-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Botões de navegação (setas) para o carrossel */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem; 
+    padding: 0.3rem 0.8rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .prev-btn {
+    left: 1px;
+  }
+
+  .next-btn {
+    right: 1px;
+}
+  /* ------------------------------------
+    SEÇÃO DE CAIXAS (SERVIÇOS)
+  ------------------------------------ */
+  .info-section {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .info-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .info-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .info-box img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .info-box p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+
+  .info-box .btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .info-box .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .info-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+    /* Seção Cards com Background */
+  .cards-bg-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/image\ 63.png') center/cover;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cards-bg-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit; /* Herda o background da seção */
+      backdrop-filter: blur(10px); /* Aplica o efeito de desfoque */
+      z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+  }
+
+  .cards-bg-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-bg {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-bg-inner {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+  }
+
+  /* Estilo para as caixas */
+.box-1 { background-color: rgba(0, 123, 255, 0.8); }
+.box-2 { background-color: rgba(40, 167, 69, 0.8); }
+.box-3 { background-color: rgba(220, 53, 69, 0.8); } 
+
+  .card-logo {
+    max-width: 80px;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-bg h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-bg p {
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .card-bg .btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    transition: all 0.3s ease;
+  }
+
+  .card-bg .btn:hover {
+    background-color: white;
+    color: #333;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Cor de fundo */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.btn:active {
+    background-color: #004494; /* Cor de fundo ao clicar */
+    transform: translateY(0); /* Remover elevação ao clicar */
+}
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .cards-bg-content {
+      grid-template-columns: 1fr;
+      padding: 0 15px;
+    }
+    
+    .card-bg {
+      margin: 10px 0;
+      min-height: auto;
+    }
+  }
+  
+  /* ------------------------------------
+     SEÇÃO "Polígono na Mídia"
+  ------------------------------------ */
+  .midia {
+    padding: 2rem 0;
+  }
+  
+  .midia h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .midia-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .midia-item img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .midia-item p {
+    color: #555;
+  }
+  
+  /* ------------------------------------
+     RODAPÉ
+  ------------------------------------ */
+  footer {
+    margin-top: 2rem;
+    background-color: #002B5C;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  .footer-top {
+    padding: 2rem 0;
+  }
+  
+  .footer-top-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-col img {
+    max-width: 120px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-col h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #ffcd00;
+  }
+  
+  .footer-bottom {
+    background-color: #001f45;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* ------------------------------------
+     RESPONSIVIDADE
+  ------------------------------------ */
+  @media (max-width: 768px) {
+    /* Exibir botão de menu em telas menores */
+    .menu-toggle {
+      display: flex;
+    }
+    /* Esconder navbar padrão em telas menores (ativar via JS) */
+    .navbar {
+      display: none;
+    }
+    /* Ajusta a altura da hero para telas pequenas */
+    .hero {
+      height: 250px;
+    }
+    .carousel-btn {
+      font-size: 1.5rem;
+      padding: 0.3rem 0.8rem;
+    }
+  }
+  
