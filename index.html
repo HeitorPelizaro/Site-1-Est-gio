@@ -2,26 +2,31 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Polígono Sistema de Ensino</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Polígono - Sistema de Ensino</title>
+  <!-- Importa o CSS principal -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header>
+
+  <!-- HEADER -->
+  <header class="site-header">
     <div class="container header-content">
       <div class="logo">
-        <img src="images/logo-poliedro-educa.png" alt="Logo Polígono">
+        
+        <img src="images/logo-poliedro-educa.png" alt="Polígono Sistema de Ensino">
       </div>
       <nav class="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#quem-somos">Quem Somos</a></li>
-          <li><a href="#unidades">Unidades</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <!-- Mantendo links do layout -->
+          <li><a href="#hero">LOREM</a></li>
+          <li><a href="#features">IPSUM</a></li>
+          <li><a href="#cards2">DOLOR</a></li>
+          <li><a href="#cards3">SIT AMET</a></li>
+          <li><a href="#midia">CONSECTETUR</a></li>
+          <li><a href="#footer">ADIPISCING ELIT</a></li>
         </ul>
       </nav>
-      <!-- Botão de menu para mobile -->
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
         <span></span>
@@ -29,94 +34,111 @@
       </div>
     </div>
   </header>
-  
-  <!-- Seção Hero / Banner -->
-  <section class="hero" id="home">
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
     <div class="container hero-content">
-      <h1>Polígono Sistema de Ensino</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor. Sed sed mattis enim.</p>
-      <button>Saiba Mais</button>
+      <h1>Polígono<br><span>Sistema de Ensino</span></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam vitae lacinia tortor. Sed sed mattis enim.
+      </p>
+    </div>
+    <div class="scroll-down">
+      <a href="#features"><img src="images/CaretDoubleDown.png" alt="Scroll Down"></a>
     </div>
   </section>
-  
-  <!-- Seção de Destaques (Carrossel) -->
-  <section class="features">
+
+  <!-- SEÇÃO 1 (Carrossel)  -->
+  <section id="features" class="features">
     <div class="container">
+      <h2>Lorem ipsum dolor</h2>
       <div class="carousel-container">
+        <!-- Botão anterior -->
+        <button class="carousel-btn prev-btn">&#10094;</button>
+
+        <!-- Trilho do carrossel -->
         <div class="carousel-track">
-          <!-- Cartão 1 -->
+          <!-- Card 1 -->
           <div class="feature-card">
             <img src="images/Rectangle 92.png" alt="Imagem 1">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="btn">Leia Mais</a>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <a href="#" class="btn btn-outline">Leia Mais</a>
           </div>
-          <!-- Cartão 2 -->
+          <!-- Card 2 -->
           <div class="feature-card">
             <img src="images/Rectangle 93.png" alt="Imagem 2">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Mauris in augue vel dolor hendrerit congue.</p>
-            <a href="#" class="btn">Leia Mais</a>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <a href="#" class="btn btn-outline">Leia Mais</a>
           </div>
-          <!-- Cartão 3 -->
+          <!-- Card 3 -->
           <div class="feature-card">
             <img src="images/Rectangle 94.png" alt="Imagem 3">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Praesent tincidunt massa vel urna feugiat.</p>
-            <a href="#" class="btn">Leia Mais</a>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <a href="#" class="btn btn-outline">Leia Mais</a>
           </div>
-          <!-- Cartão 4 -->
+          <!-- Card 4 (opcional) -->
           <div class="feature-card">
-            <img src="images/Rectangle 92.png" alt="Imagem 4">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#" class="btn">Leia Mais</a>
+            <img src="images/Rectangle 93.png" alt="Imagem 4">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <a href="#" class="btn btn-outline">Leia Mais</a>
           </div>
-          <!-- Cartão 5 -->
+          <!-- Card 5 (opcional) -->
           <div class="feature-card">
-            <img src="images/Rectangle 93.png" alt="Imagem 5">
-            <h3>Lorem ipsum dolor</h3>
-            <p>Mauris in augue vel dolor hendrerit congue.</p>
-            <a href="#" class="btn">Leia Mais</a>
+            <img src="images/Rectangle 94.png" alt="Imagem 5">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+            <a href="#" class="btn btn-outline">Leia Mais</a>
           </div>
         </div>
-        <!-- Botões de navegação do carrossel -->
-        <button class="carousel-btn prev-btn">&#10094;</button>
+
+        <!-- Botão próximo -->
         <button class="carousel-btn next-btn">&#10095;</button>
       </div>
     </div>
   </section>
-  
-  <!-- Seção Nossos Serviços -->
-  <section class="info-section">
+
+  <!-- SEÇÃO 2: 4 Cards com logo e texto -->
+  <section id="cards1" class="cards-info-section">
     <div class="container">
-      <h2>Nossos Serviços</h2>
-      <div class="info-boxes">
-        <div class="info-box">
-          <img src="images/logo-poliedro-educa.png" alt="Serviço 1">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor.</p>
-          <a href="#" class="btn">Acesse</a>
+      <h2>Lorem ipsum dolor</h2>
+      <div class="cards-info-wrapper">
+        <!-- Card 1 -->
+        <div class="info-box border-top-blue">
+          <img src="images/logo-poliedro-educa.png" alt="Polígono">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor. Sed sed mattis enim. Nunc eget lorem quam. Sed consequat leo et lacus ultrices, non venenatis est facilisis. Pellentesque pharetra, ex non dictum mattis, diam erat sollicitudin risus, in pulvinar lorem purus a mauris.
+          </p>
+          <a href="#" class="btn btn-outline">ACESSE</a>
         </div>
-        <div class="info-box">
-          <img src="images/logo-poliedro-educa.png" alt="Serviço 2">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor.</p>
-          <a href="#" class="btn">Acesse</a>
+        <!-- Card 2 -->
+        <div class="info-box border-top-green">
+          <img src="images/logo-poliedro-educa.png" alt="Polígono">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor. Sed sed mattis enim. Nunc eget lorem quam. Sed consequat leo et lacus ultrices, non venenatis est facilisis. Pellentesque pharetra, ex non dictum mattis, diam erat sollicitudin risus, in pulvinar lorem purus a mauris.
+          </p>
+          <a href="#" class="btn btn-outline">ACESSE</a>
         </div>
-        <div class="info-box">
-          <img src="images/logo-poliedro-educa.png" alt="Serviço 3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor.</p>
-          <a href="#" class="btn">Acesse</a>
+        <!-- Card 3 -->
+        <div class="info-box border-top-pink">
+          <img src="images/logo-poliedro-educa.png" alt="Polígono">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor. Sed sed mattis enim. Nunc eget lorem quam. Sed consequat leo et lacus ultrices, non venenatis est facilisis. Pellentesque pharetra, ex non dictum mattis, diam erat sollicitudin risus, in pulvinar lorem purus a mauris.
+          </p>
+          <a href="#" class="btn btn-outline">ACESSE</a>
         </div>
-        <div class="info-box">
-          <img src="images/logo-poliedro-educa.png" alt="Serviço 4">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor.</p>
-          <a href="#" class="btn">Acesse</a>
+        <!-- Card 4 -->
+        <div class="info-box border-top-purple">
+          <img src="images/logo-poliedro-educa.png" alt="Polígono">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor. Sed sed mattis enim. Nunc eget lorem quam. Sed consequat leo et lacus ultrices, non venenatis est facilisis. Pellentesque pharetra, ex non dictum mattis, diam erat sollicitudin risus, in pulvinar lorem purus a mauris.
+          </p>
+          <a href="#" class="btn btn-outline">ACESSE</a>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- Seção Cards com Background -->
+
+  <!-- Seção 3: Cards com Background -->
   <section class="cards-bg-section">
     <div class="container">
       <div class="cards-bg-content">
@@ -150,94 +172,133 @@
       </div>
     </div>
   </section>
-  
-  <!-- Seção Envie uma Mensagem -->
-  <section class="message-section">
+
+
+  <!-- SEÇÃO 4: Chamada para ação -->
+  <section id="cards3" class="call-to-action-section">
     <div class="container">
       <h2>Lorem ipsum dolor</h2>
       <p>Nam vitae lacinia tortor. Sed sed mattis enim. Nunc eget lorem quam.</p>
-      <a href="#" class="btn">Enviar Mensagem</a>
+      <a href="#" class="btn btn-primary">ENVIE UMA MENSAGEM</a>
     </div>
   </section>
-  
-  <!-- Seção Polígono na Mídia -->
-  <section class="midia" id="unidades">
+
+  <!-- SEÇÃO 5: Polígono na Mídia  -->
+  <section class="midia" id="midia">
     <div class="container midia-container">
+      <!-- Lado Esquerdo: Título, texto e link -->
       <div class="midia-left">
         <h2>Polígono na Mídia</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lacinia tortor. Sed sed mattis enim. Nunc eget lorem quam..</p>
-        <a href="#" class="midia-link">Acesse nossas matérias -></a>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Nam vitae lacinia tortor. Sed sed mattis enim. Nunc eget lorem quam.
+        </p>
+        <!-- Link/botão para acessar matérias -->
+        <a href="#" class="midia-link">
+          Acesse nossas matérias <span class="arrow">&rarr;</span>
+        </a>
       </div>
+  
+      <!-- Lado Direito: Carrossel pequeno -->
       <div class="midia-right">
         <div class="midia-carousel-container">
+          <!-- Botão anterior do carrossel -->
+          <button class="carousel-btn midia-prev-btn">&#10094;</button>
+  
+          <!-- Trilho do carrossel, onde ficam as notícias -->
           <div class="midia-carousel-track">
-            <!-- Card 1 -->
+            <!-- Notícia 1 -->
             <div class="midia-card">
               <img src="images/Frame 206.png" alt="Notícia 1">
               <h3>Título da Notícia 1</h3>
-              <a href="#" class="btn">Saiba Mais</a>
+              <a href="#" class="btn btn-outline">Leia Mais</a>
             </div>
-            <!-- Card 2 -->
+            <!-- Notícia 2 -->
             <div class="midia-card">
               <img src="images/frame 207.png" alt="Notícia 2">
               <h3>Título da Notícia 2</h3>
-              <a href="#" class="btn">Saiba Mais</a>
+              <a href="#" class="btn btn-outline">Leia Mais</a>
             </div>
-            <!-- Card 3 -->
+            <!-- Notícia 3 -->
             <div class="midia-card">
               <img src="images/Frame 206.png" alt="Notícia 3">
               <h3>Título da Notícia 3</h3>
-              <a href="#" class="btn">Saiba Mais</a>
-            </div>
-            <!-- Card 4 -->
-            <div class="midia-card">
-              <img src="images/frame 207.png" alt="Notícia 4">
-              <h3>Título da Notícia 4</h3>
-              <a href="#" class="btn">Saiba Mais</a>
+              <a href="#" class="btn btn-outline">Leia Mais</a>
             </div>
           </div>
-          <!-- Botões de navegação do carrossel -->
-          <button class="carousel-btn midia-prev-btn">&#10094;</button>
+  
+          <!-- Botão próximo do carrossel -->
           <button class="carousel-btn midia-next-btn">&#10095;</button>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- Rodapé -->
-  <footer id="contato">
+
+  <!-- FOOTER -->
+  <footer id="footer" class="site-footer">
     <div class="footer-top">
       <div class="container footer-top-content">
-        <div class="footer-col">
-          <p>
-            Endereço: Rua Exemplo, 123<br/>
-            Telefone: (00) 0000-0000
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4>Links</h4>
+        <!-- 1ª coluna -->
+        <div class="footer-col info-col">
+          <h4><i class="icon-info"></i> Lorem ipsum dolor sit</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#quem-somos">Quem Somos</a></li>
-            <li><a href="#unidades">Unidades</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Sit amet</a></li>
+          </ul>
+          <p>Lorem ipsum</p>
+        </div>
+        <!-- 2ª coluna -->
+        <div class="footer-col info-col">
+          <h4>Lorem ipsum</h4>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Redes Sociais</h4>
+        <!-- 3ª coluna -->
+        <div class="footer-col info-col highlight-col">
+          <h4>Lorem ipsum</h4>
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
           </ul>
+        </div>
+        <!-- 4ª coluna (endereço, redes, telefone) -->
+        <div class="footer-col contact-col">
+          <div class="social-icons">
+            <a href="#"><img src="images/001-instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/002-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/003-linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="images/005-youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="images/004-twitter.png" alt="Twitter"></a>
+          </div>
+          <address>
+            Av. Dr. Nelson D'Ávila, 877<br>
+            Centro<br>
+            São José dos Campos - SP<br>
+            CEP: 12242-280
+          </address>
+          <p class="footer-phone">(12) 3924 1616</p>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Polígono Sistema de Ensino - Todos os direitos reservados.</p>
+      <div class="container footer-bottom-content">
+        <p>
+          Este site é protegido pela reCAPTCHA e se aplicam a 
+          <a href="#">Política de Privacidade</a> e 
+          <a href="#">Termos de Uso do Google</a><br>
+          © 2021 Polígono - Todos os direitos reservados.
+        </p>
+      </div>
     </div>
   </footer>
-  
+
   <script src="script.js"></script>
 </body>
 </html>
